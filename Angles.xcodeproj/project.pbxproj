@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		559240E81EE8DD4600704A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240E71EE8DD4600704A71 /* AppDelegate.swift */; };
+		559240EA1EE8DD4600704A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240E91EE8DD4600704A71 /* ViewController.swift */; };
+		559240ED1EE8DD4600704A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559240EB1EE8DD4600704A71 /* Main.storyboard */; };
+		559240F01EE8DD4600704A71 /* Angles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 559240EE1EE8DD4600704A71 /* Angles.xcdatamodeld */; };
+		559240F21EE8DD4600704A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559240F11EE8DD4600704A71 /* Assets.xcassets */; };
+		559240F51EE8DD4600704A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559240F31EE8DD4600704A71 /* LaunchScreen.storyboard */; };
+		559241001EE8DD4700704A71 /* AnglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240FF1EE8DD4700704A71 /* AnglesTests.swift */; };
+		5592410B1EE8DD4700704A71 /* AnglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592410A1EE8DD4700704A71 /* AnglesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		559240FC1EE8DD4700704A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559240DC1EE8DD4600704A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559240E31EE8DD4600704A71;
+			remoteInfo = Angles;
+		};
+		559241071EE8DD4700704A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559240DC1EE8DD4600704A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559240E31EE8DD4600704A71;
+			remoteInfo = Angles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		559240E41EE8DD4600704A71 /* Angles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559240E71EE8DD4600704A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		559240E91EE8DD4600704A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		559240EC1EE8DD4600704A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559240EF1EE8DD4600704A71 /* Angles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Angles.xcdatamodel; sourceTree = "<group>"; };
+		559240F11EE8DD4600704A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559240F41EE8DD4600704A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559240F61EE8DD4600704A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559240FB1EE8DD4700704A71 /* AnglesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnglesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559240FF1EE8DD4700704A71 /* AnglesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnglesTests.swift; sourceTree = "<group>"; };
+		559241011EE8DD4700704A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559241061EE8DD4700704A71 /* AnglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5592410A1EE8DD4700704A71 /* AnglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnglesUITests.swift; sourceTree = "<group>"; };
+		5592410C1EE8DD4700704A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559240E11EE8DD4600704A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559240F81EE8DD4700704A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559241031EE8DD4700704A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559240DB1EE8DD4600704A71 = {
+			isa = PBXGroup;
+			children = (
+				559240E61EE8DD4600704A71 /* Angles */,
+				559240FE1EE8DD4700704A71 /* AnglesTests */,
+				559241091EE8DD4700704A71 /* AnglesUITests */,
+				559240E51EE8DD4600704A71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		559240E51EE8DD4600704A71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559240E41EE8DD4600704A71 /* Angles.app */,
+				559240FB1EE8DD4700704A71 /* AnglesTests.xctest */,
+				559241061EE8DD4700704A71 /* AnglesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559240E61EE8DD4600704A71 /* Angles */ = {
+			isa = PBXGroup;
+			children = (
+				559240E71EE8DD4600704A71 /* AppDelegate.swift */,
+				559240E91EE8DD4600704A71 /* ViewController.swift */,
+				559240EB1EE8DD4600704A71 /* Main.storyboard */,
+				559240F11EE8DD4600704A71 /* Assets.xcassets */,
+				559240F31EE8DD4600704A71 /* LaunchScreen.storyboard */,
+				559240F61EE8DD4600704A71 /* Info.plist */,
+				559240EE1EE8DD4600704A71 /* Angles.xcdatamodeld */,
+			);
+			path = Angles;
+			sourceTree = "<group>";
+		};
+		559240FE1EE8DD4700704A71 /* AnglesTests */ = {
+			isa = PBXGroup;
+			children = (
+				559240FF1EE8DD4700704A71 /* AnglesTests.swift */,
+				559241011EE8DD4700704A71 /* Info.plist */,
+			);
+			path = AnglesTests;
+			sourceTree = "<group>";
+		};
+		559241091EE8DD4700704A71 /* AnglesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5592410A1EE8DD4700704A71 /* AnglesUITests.swift */,
+				5592410C1EE8DD4700704A71 /* Info.plist */,
+			);
+			path = AnglesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559240E31EE8DD4600704A71 /* Angles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5592410F1EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "Angles" */;
+			buildPhases = (
+				559240E01EE8DD4600704A71 /* Sources */,
+				559240E11EE8DD4600704A71 /* Frameworks */,
+				559240E21EE8DD4600704A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Angles;
+			productName = Angles;
+			productReference = 559240E41EE8DD4600704A71 /* Angles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559240FA1EE8DD4700704A71 /* AnglesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559241121EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesTests" */;
+			buildPhases = (
+				559240F71EE8DD4700704A71 /* Sources */,
+				559240F81EE8DD4700704A71 /* Frameworks */,
+				559240F91EE8DD4700704A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559240FD1EE8DD4700704A71 /* PBXTargetDependency */,
+			);
+			name = AnglesTests;
+			productName = AnglesTests;
+			productReference = 559240FB1EE8DD4700704A71 /* AnglesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		559241051EE8DD4700704A71 /* AnglesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559241151EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesUITests" */;
+			buildPhases = (
+				559241021EE8DD4700704A71 /* Sources */,
+				559241031EE8DD4700704A71 /* Frameworks */,
+				559241041EE8DD4700704A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559241081EE8DD4700704A71 /* PBXTargetDependency */,
+			);
+			name = AnglesUITests;
+			productName = AnglesUITests;
+			productReference = 559241061EE8DD4700704A71 /* AnglesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559240DC1EE8DD4600704A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Antonio Allen";
+				TargetAttributes = {
+					559240E31EE8DD4600704A71 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZ7CSMJG22;
+						ProvisioningStyle = Automatic;
+					};
+					559240FA1EE8DD4700704A71 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZ7CSMJG22;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 559240E31EE8DD4600704A71;
+					};
+					559241051EE8DD4700704A71 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZ7CSMJG22;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 559240E31EE8DD4600704A71;
+					};
+				};
+			};
+			buildConfigurationList = 559240DF1EE8DD4600704A71 /* Build configuration list for PBXProject "Angles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559240DB1EE8DD4600704A71;
+			productRefGroup = 559240E51EE8DD4600704A71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				559240E31EE8DD4600704A71 /* Angles */,
+				559240FA1EE8DD4700704A71 /* AnglesTests */,
+				559241051EE8DD4700704A71 /* AnglesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559240E21EE8DD4600704A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559240F51EE8DD4600704A71 /* LaunchScreen.storyboard in Resources */,
+				559240F21EE8DD4600704A71 /* Assets.xcassets in Resources */,
+				559240ED1EE8DD4600704A71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559240F91EE8DD4700704A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559241041EE8DD4700704A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559240E01EE8DD4600704A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559240F01EE8DD4600704A71 /* Angles.xcdatamodeld in Sources */,
+				559240EA1EE8DD4600704A71 /* ViewController.swift in Sources */,
+				559240E81EE8DD4600704A71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559240F71EE8DD4700704A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559241001EE8DD4700704A71 /* AnglesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559241021EE8DD4700704A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5592410B1EE8DD4700704A71 /* AnglesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559240FD1EE8DD4700704A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559240E31EE8DD4600704A71 /* Angles */;
+			targetProxy = 559240FC1EE8DD4700704A71 /* PBXContainerItemProxy */;
+		};
+		559241081EE8DD4700704A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559240E31EE8DD4600704A71 /* Angles */;
+			targetProxy = 559241071EE8DD4700704A71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		559240EB1EE8DD4600704A71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559240EC1EE8DD4600704A71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		559240F31EE8DD4600704A71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559240F41EE8DD4600704A71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5592410D1EE8DD4700704A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5592410E1EE8DD4700704A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559241101EE8DD4700704A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = Angles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.Angles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		559241111EE8DD4700704A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = Angles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.Angles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		559241131EE8DD4700704A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = AnglesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.AnglesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Angles.app/Angles";
+			};
+			name = Debug;
+		};
+		559241141EE8DD4700704A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = AnglesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.AnglesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Angles.app/Angles";
+			};
+			name = Release;
+		};
+		559241161EE8DD4700704A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = AnglesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.AnglesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Angles;
+			};
+			name = Debug;
+		};
+		559241171EE8DD4700704A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				INFOPLIST_FILE = AnglesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.AnglesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Angles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559240DF1EE8DD4600704A71 /* Build configuration list for PBXProject "Angles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5592410D1EE8DD4700704A71 /* Debug */,
+				5592410E1EE8DD4700704A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5592410F1EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "Angles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559241101EE8DD4700704A71 /* Debug */,
+				559241111EE8DD4700704A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		559241121EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559241131EE8DD4700704A71 /* Debug */,
+				559241141EE8DD4700704A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		559241151EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559241161EE8DD4700704A71 /* Debug */,
+				559241171EE8DD4700704A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		559240EE1EE8DD4600704A71 /* Angles.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				559240EF1EE8DD4600704A71 /* Angles.xcdatamodel */,
+			);
+			currentVersion = 559240EF1EE8DD4600704A71 /* Angles.xcdatamodel */;
+			path = Angles.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 559240DC1EE8DD4600704A71 /* Project object */;
+}
