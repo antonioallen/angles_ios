@@ -8,15 +8,51 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
-
+    var beaconManager = ESTBeaconManager()
+    static var instance:AppDelegate?
+    let beaconNotificationsManager = BeaconNotificationsManager()
+    
+    //Beacons
+    var beacons:[Beacon] = [
+        //Replace with your beacons here
+        Beacon(_UUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", _major: 50390, _minor: 3173, _title: "Home", _description: "Welcome Home", _beaconType: BEACON_TYPE_HOME),
+        
+        Beacon(_UUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", _major: 46061, _minor: 2086, _title: "Work", _description: "Work Hard. Play Hard.", _beaconType: BEACON_TYPE_WORK),
+        
+        Beacon(_UUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", _major: 27631, _minor: 3004, _title: "Car", _description: "Vroom. Vroom.", _beaconType: BEACON_TYPE_CAR)
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AppDelegate.instance = self
+        ESTConfig.setupAppID("angles-fk5", andAppToken: "cc199bbc29724ae209642862955c85ff")
+        beaconManager.delegate = self
+        
+        self.beaconNotificationsManager.enableNotifications(
+            for: BeaconID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", major: 50390, minor: 3173),
+            enterMessage: "Welcome Home. Please take a look at your tasks",
+            exitMessage: "Heading Out? Make sure that you've got everything"
+        )
+        
+        self.beaconNotificationsManager.enableNotifications(
+            for: BeaconID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", major: 46061, minor: 2086),
+            enterMessage: "Ready for another day at work? Check your tasks remaining",
+            exitMessage: "Phew, I'm sure your glad to head out!"
+        )
+        
+        self.beaconNotificationsManager.enableNotifications(
+            for: BeaconID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D", major: 27631, minor: 3004),
+            enterMessage: "Ready for a drive? Check your task while I warm up",
+            exitMessage: "Be safe!"
+        )
+        
         return true
     }
 
@@ -43,6 +79,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    //MARK: - Beacon
+    func getBeaconManager() -> ESTBeaconManager {
+        return beaconManager
+    }
+    
+    func beaconManager(_ manager: Any, didEnter region: CLBeaconRegion) {
+        print("Beacon In Range")
+        
+        let uuid = region.proximityUUID.uuidString
+        let major = region.major?.intValue ?? -1
+        let minor = region.minor?.intValue ?? -1
+        
+        if major != -1 && minor != -1{
+            print("Finding Match...")
+            print("UUID: \(uuid)")
+            print("Major: \(major)")
+            print("Minor: \(minor)")
+            self.findPopPod(uuid: uuid, major: major, minor: minor, podState: .entered)
+        }
+    }
+    
+    func beaconManager(_ manager: Any, didExitRegion region: CLBeaconRegion) {
+        print("Beacon Out Of Range")
+        
+        let uuid = region.proximityUUID.uuidString
+        let major = region.major?.intValue ?? -1
+        let minor = region.minor?.intValue ?? -1
+        
+        if major != -1 && minor != -1{
+            print("Finding Pod...")
+            print("UUID: \(uuid)")
+            print("Major: \(major)")
+            print("Minor: \(minor)")
+            self.findPopPod(uuid: uuid, major: major, minor: minor, podState: .exited)
+        }
+    }
+    
+    func findPopPod(uuid:String, major:Int, minor:Int, podState:PodState) {
+        if podState == .entered{
+            for (index, beacon) in self.beacons.enumerated(){
+                if beacon.UUID == uuid && beacon.major == major && beacon.minor == minor{
+                    print("Beacon Found: \(beacon.title)")
+                    RootLocationTaskViewController.instance?.selectTab(tabIndex: index+1)
+                }
+            }
+        }
+    }
+    
 
     // MARK: - Core Data stack
 
@@ -90,4 +175,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+enum PodState {
+    case entered, exited
+}
+
 

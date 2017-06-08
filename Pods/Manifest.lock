@@ -1,0 +1,21 @@
+PODS:
+  - Pager (1.2.0)
+  - PermissionScope (1.1.1)
+  - Pulsator (0.3.0)
+  - SwiftOverlays (3.0.0)
+
+DEPENDENCIES:
+  - Pager
+  - PermissionScope
+  - Pulsator
+  - SwiftOverlays (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  Pager: f998c054e5074e987bd73d73ca903875acfbd365
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  Pulsator: 0191f14f7ab82d6dbde6fdbde42036f07a4450e3
+  SwiftOverlays: 4cdd9e4f5c7817fb6348882059eb697e11685fad
+
+PODFILE CHECKSUM: f22758fd5de5e5dabcad8c107680504396b320b0
+
+COCOAPODS: 1.2.1

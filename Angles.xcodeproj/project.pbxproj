@@ -8,13 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		559240E81EE8DD4600704A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240E71EE8DD4600704A71 /* AppDelegate.swift */; };
-		559240EA1EE8DD4600704A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240E91EE8DD4600704A71 /* ViewController.swift */; };
+		559240EA1EE8DD4600704A71 /* RootHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240E91EE8DD4600704A71 /* RootHomeViewController.swift */; };
 		559240ED1EE8DD4600704A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559240EB1EE8DD4600704A71 /* Main.storyboard */; };
 		559240F01EE8DD4600704A71 /* Angles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 559240EE1EE8DD4600704A71 /* Angles.xcdatamodeld */; };
 		559240F21EE8DD4600704A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559240F11EE8DD4600704A71 /* Assets.xcassets */; };
 		559240F51EE8DD4600704A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559240F31EE8DD4600704A71 /* LaunchScreen.storyboard */; };
 		559241001EE8DD4700704A71 /* AnglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559240FF1EE8DD4700704A71 /* AnglesTests.swift */; };
 		5592410B1EE8DD4700704A71 /* AnglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592410A1EE8DD4700704A71 /* AnglesUITests.swift */; };
+		5592411D1EE8DEF200704A71 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 559241191EE8DEF200704A71 /* CircularStd-Black.otf */; };
+		5592411E1EE8DEF200704A71 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5592411A1EE8DEF200704A71 /* CircularStd-Bold.otf */; };
+		5592411F1EE8DEF200704A71 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5592411B1EE8DEF200704A71 /* CircularStd-Book.otf */; };
+		559241201EE8DEF200704A71 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5592411C1EE8DEF200704A71 /* CircularStd-Medium.otf */; };
+		559241231EE8E39800704A71 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241221EE8E39800704A71 /* SplashViewController.swift */; };
+		559241251EE8E3AC00704A71 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241241EE8E3AC00704A71 /* SetupViewController.swift */; };
+		559241271EE8E3BC00704A71 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241261EE8E3BC00704A71 /* PermissionViewController.swift */; };
+		559241291EE8E3CB00704A71 /* CongratsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241281EE8E3CB00704A71 /* CongratsViewController.swift */; };
+		5592412C1EE8E40900704A71 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592412B1EE8E40900704A71 /* InfoViewController.swift */; };
+		5592412E1EE8E43500704A71 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592412D1EE8E43500704A71 /* LocationViewController.swift */; };
+		559241301EE8E44F00704A71 /* LocationTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592412F1EE8E44F00704A71 /* LocationTaskViewController.swift */; };
+		559241321EE8E46E00704A71 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241311EE8E46E00704A71 /* EditTaskViewController.swift */; };
+		559241361EE8E70E00704A71 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241351EE8E70E00704A71 /* Utils.swift */; };
+		559241381EE8E7EB00704A71 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241371EE8E7EB00704A71 /* Extenstions.swift */; };
+		5592413A1EE8E85200704A71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241391EE8E85200704A71 /* Constants.swift */; };
+		5592413C1EE8E8CA00704A71 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592413B1EE8E8CA00704A71 /* Colors.swift */; };
+		5592413F1EE8E8F600704A71 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592413E1EE8E8F600704A71 /* RoundedView.swift */; };
+		559241411EE8EA6400704A71 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241401EE8EA6400704A71 /* GradientView.swift */; };
+		559241441EE903D300704A71 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241431EE903D300704A71 /* Beacon.swift */; };
+		559241461EE9053700704A71 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241451EE9053700704A71 /* TaskViewController.swift */; };
+		559241481EE905A200704A71 /* FullScreenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241471EE905A200704A71 /* FullScreenPageViewController.swift */; };
+		5592414A1EE9075D00704A71 /* RootLocationTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241491EE9075D00704A71 /* RootLocationTaskViewController.swift */; };
+		5592414D1EE911DE00704A71 /* TaskItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592414C1EE911DE00704A71 /* TaskItemTableViewCell.swift */; };
+		559241501EE928B500704A71 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592414E1EE928B500704A71 /* UserNotifications.framework */; };
+		559241511EE928B500704A71 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592414F1EE928B500704A71 /* UserNotificationsUI.framework */; };
+		559241531EE928BF00704A71 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559241521EE928BF00704A71 /* SystemConfiguration.framework */; };
+		559241551EE928CD00704A71 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559241541EE928CD00704A71 /* EstimoteSDK.framework */; };
+		559241591EE92C9800704A71 /* BeaconID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559241581EE92C9800704A71 /* BeaconID.swift */; };
+		5592415B1EE92CAC00704A71 /* BeaconNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592415A1EE92CAC00704A71 /* BeaconNotificationsManager.swift */; };
+		62D40832B40A5AAAD300BF94 /* Pods_AnglesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF9937F64022B2B06CC0A86 /* Pods_AnglesUITests.framework */; };
+		6B390B6A504776E714E2F96C /* Pods_AnglesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDE146F011C0BE6ACBC4C2E /* Pods_AnglesTests.framework */; };
+		C0F2CE0C07A1B1C94EFCF6A7 /* Pods_Angles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E575290EA44587B88FCB71 /* Pods_Angles.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4229CEEFAC536B102344793D /* Pods-Angles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Angles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Angles/Pods-Angles.debug.xcconfig"; sourceTree = "<group>"; };
+		4BDE146F011C0BE6ACBC4C2E /* Pods_AnglesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnglesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		559240E41EE8DD4600704A71 /* Angles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		559240E71EE8DD4600704A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		559240E91EE8DD4600704A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		559240E91EE8DD4600704A71 /* RootHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHomeViewController.swift; sourceTree = "<group>"; };
 		559240EC1EE8DD4600704A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		559240EF1EE8DD4600704A71 /* Angles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Angles.xcdatamodel; sourceTree = "<group>"; };
 		559240F11EE8DD4600704A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +83,43 @@
 		559241061EE8DD4700704A71 /* AnglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5592410A1EE8DD4700704A71 /* AnglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnglesUITests.swift; sourceTree = "<group>"; };
 		5592410C1EE8DD4700704A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559241191EE8DEF200704A71 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		5592411A1EE8DEF200704A71 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		5592411B1EE8DEF200704A71 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		5592411C1EE8DEF200704A71 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		559241221EE8E39800704A71 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		559241241EE8E3AC00704A71 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		559241261EE8E3BC00704A71 /* PermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		559241281EE8E3CB00704A71 /* CongratsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratsViewController.swift; sourceTree = "<group>"; };
+		5592412B1EE8E40900704A71 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5592412D1EE8E43500704A71 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		5592412F1EE8E44F00704A71 /* LocationTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTaskViewController.swift; sourceTree = "<group>"; };
+		559241311EE8E46E00704A71 /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		559241351EE8E70E00704A71 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		559241371EE8E7EB00704A71 /* Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		559241391EE8E85200704A71 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5592413B1EE8E8CA00704A71 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5592413E1EE8E8F600704A71 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		559241401EE8EA6400704A71 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		559241431EE903D300704A71 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		559241451EE9053700704A71 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		559241471EE905A200704A71 /* FullScreenPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPageViewController.swift; sourceTree = "<group>"; };
+		559241491EE9075D00704A71 /* RootLocationTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootLocationTaskViewController.swift; sourceTree = "<group>"; };
+		5592414C1EE911DE00704A71 /* TaskItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemTableViewCell.swift; sourceTree = "<group>"; };
+		5592414E1EE928B500704A71 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		5592414F1EE928B500704A71 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		559241521EE928BF00704A71 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		559241541EE928CD00704A71 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
+		559241561EE9290500704A71 /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		559241581EE92C9800704A71 /* BeaconID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconID.swift; sourceTree = "<group>"; };
+		5592415A1EE92CAC00704A71 /* BeaconNotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconNotificationsManager.swift; sourceTree = "<group>"; };
+		59BB930BB568E2B06CA3EBC1 /* Pods-AnglesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnglesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnglesUITests/Pods-AnglesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		68E575290EA44587B88FCB71 /* Pods_Angles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Angles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7409425BB03967FB11D75F /* Pods-AnglesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnglesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnglesTests/Pods-AnglesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8462553FD274D60990088779 /* Pods-AnglesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnglesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnglesTests/Pods-AnglesTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DF9937F64022B2B06CC0A86 /* Pods_AnglesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnglesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAD9F700325FC119BFB129C /* Pods-AnglesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnglesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnglesUITests/Pods-AnglesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0866DAA2D1B9D55D21D10F /* Pods-Angles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Angles.release.xcconfig"; path = "Pods/Target Support Files/Pods-Angles/Pods-Angles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +127,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559241551EE928CD00704A71 /* EstimoteSDK.framework in Frameworks */,
+				559241531EE928BF00704A71 /* SystemConfiguration.framework in Frameworks */,
+				559241501EE928B500704A71 /* UserNotifications.framework in Frameworks */,
+				559241511EE928B500704A71 /* UserNotificationsUI.framework in Frameworks */,
+				C0F2CE0C07A1B1C94EFCF6A7 /* Pods_Angles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B390B6A504776E714E2F96C /* Pods_AnglesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +147,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D40832B40A5AAAD300BF94 /* Pods_AnglesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0783C5C57EECFAF78DAFC514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4229CEEFAC536B102344793D /* Pods-Angles.debug.xcconfig */,
+				DC0866DAA2D1B9D55D21D10F /* Pods-Angles.release.xcconfig */,
+				7B7409425BB03967FB11D75F /* Pods-AnglesTests.debug.xcconfig */,
+				8462553FD274D60990088779 /* Pods-AnglesTests.release.xcconfig */,
+				BDAD9F700325FC119BFB129C /* Pods-AnglesUITests.debug.xcconfig */,
+				59BB930BB568E2B06CA3EBC1 /* Pods-AnglesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3349D47590E6935EE556A494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				559241541EE928CD00704A71 /* EstimoteSDK.framework */,
+				559241521EE928BF00704A71 /* SystemConfiguration.framework */,
+				5592414E1EE928B500704A71 /* UserNotifications.framework */,
+				5592414F1EE928B500704A71 /* UserNotificationsUI.framework */,
+				68E575290EA44587B88FCB71 /* Pods_Angles.framework */,
+				4BDE146F011C0BE6ACBC4C2E /* Pods_AnglesTests.framework */,
+				8DF9937F64022B2B06CC0A86 /* Pods_AnglesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		559240DB1EE8DD4600704A71 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +188,8 @@
 				559240FE1EE8DD4700704A71 /* AnglesTests */,
 				559241091EE8DD4700704A71 /* AnglesUITests */,
 				559240E51EE8DD4600704A71 /* Products */,
+				0783C5C57EECFAF78DAFC514 /* Pods */,
+				3349D47590E6935EE556A494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +206,21 @@
 		559240E61EE8DD4600704A71 /* Angles */ = {
 			isa = PBXGroup;
 			children = (
+				559241571EE92C8000704A71 /* Estimote */,
+				5592414B1EE911BE00704A71 /* Cells */,
+				559241421EE903C200704A71 /* Objects */,
+				5592413D1EE8E8DF00704A71 /* Views */,
+				559241341EE8E70400704A71 /* Utils */,
+				559241211EE8E37B00704A71 /* ViewControllers */,
+				559241181EE8DED400704A71 /* Fonts */,
 				559240E71EE8DD4600704A71 /* AppDelegate.swift */,
-				559240E91EE8DD4600704A71 /* ViewController.swift */,
+				559240E91EE8DD4600704A71 /* RootHomeViewController.swift */,
 				559240EB1EE8DD4600704A71 /* Main.storyboard */,
 				559240F11EE8DD4600704A71 /* Assets.xcassets */,
 				559240F31EE8DD4600704A71 /* LaunchScreen.storyboard */,
 				559240F61EE8DD4600704A71 /* Info.plist */,
 				559240EE1EE8DD4600704A71 /* Angles.xcdatamodeld */,
+				559241561EE9290500704A71 /* ObjCBridge.h */,
 			);
 			path = Angles;
 			sourceTree = "<group>";
@@ -128,6 +243,88 @@
 			path = AnglesUITests;
 			sourceTree = "<group>";
 		};
+		559241181EE8DED400704A71 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				559241191EE8DEF200704A71 /* CircularStd-Black.otf */,
+				5592411A1EE8DEF200704A71 /* CircularStd-Bold.otf */,
+				5592411B1EE8DEF200704A71 /* CircularStd-Book.otf */,
+				5592411C1EE8DEF200704A71 /* CircularStd-Medium.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		559241211EE8E37B00704A71 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5592412A1EE8E40200704A71 /* Main */,
+				559241221EE8E39800704A71 /* SplashViewController.swift */,
+				559241241EE8E3AC00704A71 /* SetupViewController.swift */,
+				559241261EE8E3BC00704A71 /* PermissionViewController.swift */,
+				559241281EE8E3CB00704A71 /* CongratsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5592412A1EE8E40200704A71 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5592412B1EE8E40900704A71 /* InfoViewController.swift */,
+				5592412D1EE8E43500704A71 /* LocationViewController.swift */,
+				5592412F1EE8E44F00704A71 /* LocationTaskViewController.swift */,
+				559241311EE8E46E00704A71 /* EditTaskViewController.swift */,
+				559241451EE9053700704A71 /* TaskViewController.swift */,
+				559241491EE9075D00704A71 /* RootLocationTaskViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		559241341EE8E70400704A71 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				559241351EE8E70E00704A71 /* Utils.swift */,
+				559241371EE8E7EB00704A71 /* Extenstions.swift */,
+				559241391EE8E85200704A71 /* Constants.swift */,
+				5592413B1EE8E8CA00704A71 /* Colors.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5592413D1EE8E8DF00704A71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5592413E1EE8E8F600704A71 /* RoundedView.swift */,
+				559241401EE8EA6400704A71 /* GradientView.swift */,
+				559241471EE905A200704A71 /* FullScreenPageViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		559241421EE903C200704A71 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				559241431EE903D300704A71 /* Beacon.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		5592414B1EE911BE00704A71 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5592414C1EE911DE00704A71 /* TaskItemTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		559241571EE92C8000704A71 /* Estimote */ = {
+			isa = PBXGroup;
+			children = (
+				559241581EE92C9800704A71 /* BeaconID.swift */,
+				5592415A1EE92CAC00704A71 /* BeaconNotificationsManager.swift */,
+			);
+			name = Estimote;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5592410F1EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "Angles" */;
 			buildPhases = (
+				FFC4116433AE432BA3ADE72D /* [CP] Check Pods Manifest.lock */,
 				559240E01EE8DD4600704A71 /* Sources */,
 				559240E11EE8DD4600704A71 /* Frameworks */,
 				559240E21EE8DD4600704A71 /* Resources */,
+				76F4A189DCFC97B8CB1F0769 /* [CP] Embed Pods Frameworks */,
+				D30C9644ADD6547F368D4FF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 559241121EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesTests" */;
 			buildPhases = (
+				B0BA68426693F4C34A5D62AE /* [CP] Check Pods Manifest.lock */,
 				559240F71EE8DD4700704A71 /* Sources */,
 				559240F81EE8DD4700704A71 /* Frameworks */,
 				559240F91EE8DD4700704A71 /* Resources */,
+				6D0546A808DC60389D1172EF /* [CP] Embed Pods Frameworks */,
+				968D5FA9742AEE1F12ABB0CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 559241151EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesUITests" */;
 			buildPhases = (
+				660DE3BBDD5DD4CFE868126C /* [CP] Check Pods Manifest.lock */,
 				559241021EE8DD4700704A71 /* Sources */,
 				559241031EE8DD4700704A71 /* Frameworks */,
 				559241041EE8DD4700704A71 /* Resources */,
+				FE9EBF824C07402C1C3397F9 /* [CP] Embed Pods Frameworks */,
+				64076307753764A3CC0BD117 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +444,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5592411E1EE8DEF200704A71 /* CircularStd-Bold.otf in Resources */,
+				5592411F1EE8DEF200704A71 /* CircularStd-Book.otf in Resources */,
 				559240F51EE8DD4600704A71 /* LaunchScreen.storyboard in Resources */,
 				559240F21EE8DD4600704A71 /* Assets.xcassets in Resources */,
+				5592411D1EE8DEF200704A71 /* CircularStd-Black.otf in Resources */,
 				559240ED1EE8DD4600704A71 /* Main.storyboard in Resources */,
+				559241201EE8DEF200704A71 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +470,173 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64076307753764A3CC0BD117 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnglesUITests/Pods-AnglesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660DE3BBDD5DD4CFE868126C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0546A808DC60389D1172EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnglesTests/Pods-AnglesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F4A189DCFC97B8CB1F0769 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Angles/Pods-Angles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968D5FA9742AEE1F12ABB0CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnglesTests/Pods-AnglesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BA68426693F4C34A5D62AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D30C9644ADD6547F368D4FF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Angles/Pods-Angles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9EBF824C07402C1C3397F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnglesUITests/Pods-AnglesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC4116433AE432BA3ADE72D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		559240E01EE8DD4600704A71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5592415B1EE92CAC00704A71 /* BeaconNotificationsManager.swift in Sources */,
+				559241321EE8E46E00704A71 /* EditTaskViewController.swift in Sources */,
+				5592413C1EE8E8CA00704A71 /* Colors.swift in Sources */,
+				559241301EE8E44F00704A71 /* LocationTaskViewController.swift in Sources */,
 				559240F01EE8DD4600704A71 /* Angles.xcdatamodeld in Sources */,
-				559240EA1EE8DD4600704A71 /* ViewController.swift in Sources */,
+				559241271EE8E3BC00704A71 /* PermissionViewController.swift in Sources */,
+				559241441EE903D300704A71 /* Beacon.swift in Sources */,
+				559241591EE92C9800704A71 /* BeaconID.swift in Sources */,
+				559241461EE9053700704A71 /* TaskViewController.swift in Sources */,
+				559241411EE8EA6400704A71 /* GradientView.swift in Sources */,
+				559240EA1EE8DD4600704A71 /* RootHomeViewController.swift in Sources */,
 				559240E81EE8DD4600704A71 /* AppDelegate.swift in Sources */,
+				559241231EE8E39800704A71 /* SplashViewController.swift in Sources */,
+				5592414D1EE911DE00704A71 /* TaskItemTableViewCell.swift in Sources */,
+				5592413F1EE8E8F600704A71 /* RoundedView.swift in Sources */,
+				559241251EE8E3AC00704A71 /* SetupViewController.swift in Sources */,
+				5592412E1EE8E43500704A71 /* LocationViewController.swift in Sources */,
+				5592412C1EE8E40900704A71 /* InfoViewController.swift in Sources */,
+				559241291EE8E3CB00704A71 /* CongratsViewController.swift in Sources */,
+				5592414A1EE9075D00704A71 /* RootLocationTaskViewController.swift in Sources */,
+				559241481EE905A200704A71 /* FullScreenPageViewController.swift in Sources */,
+				5592413A1EE8E85200704A71 /* Constants.swift in Sources */,
+				559241361EE8E70E00704A71 /* Utils.swift in Sources */,
+				559241381EE8E7EB00704A71 /* Extenstions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,32 +786,45 @@
 		};
 		559241101EE8DD4700704A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4229CEEFAC536B102344793D /* Pods-Angles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+				);
 				INFOPLIST_FILE = Angles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.Angles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Angles/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		559241111EE8DD4700704A71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0866DAA2D1B9D55D21D10F /* Pods-Angles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZZ7CSMJG22;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+				);
 				INFOPLIST_FILE = Angles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonioallen.Angles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Angles/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		559241131EE8DD4700704A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7409425BB03967FB11D75F /* Pods-AnglesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +840,7 @@
 		};
 		559241141EE8DD4700704A71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8462553FD274D60990088779 /* Pods-AnglesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +856,7 @@
 		};
 		559241161EE8DD4700704A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAD9F700325FC119BFB129C /* Pods-AnglesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZZ7CSMJG22;
@@ -487,6 +871,7 @@
 		};
 		559241171EE8DD4700704A71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BB930BB568E2B06CA3EBC1 /* Pods-AnglesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZZ7CSMJG22;
@@ -518,6 +903,7 @@
 				559241111EE8DD4700704A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		559241121EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +912,7 @@
 				559241141EE8DD4700704A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		559241151EE8DD4700704A71 /* Build configuration list for PBXNativeTarget "AnglesUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +921,7 @@
 				559241171EE8DD4700704A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
