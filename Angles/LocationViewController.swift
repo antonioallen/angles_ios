@@ -36,7 +36,7 @@ class LocationViewController: UIViewController {
     }
     
     @IBAction func cardUpAction(_ sender: UIButton) {
-        //self.parentVc?.pageViewController.scrollToViewController(index: 1)
+        self.parentVc?.pageViewController.scrollToViewController(index: 1)
     }
 
     /*

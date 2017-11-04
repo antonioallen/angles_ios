@@ -45,7 +45,7 @@ class TaskViewController: UIViewController, FullPagerProtocol {
         self.locationTaskViewController.parentVc = self
         self.locationTaskViewController.beacon = beacon
         
-        pageViewController = FullScreenPageViewController(childControllers: [self.locationViewController], pageController: nil, frame: self.view.frame, navigationOrientation: .vertical, currentIndex: 0)
+        pageViewController = FullScreenPageViewController(childControllers: [self.locationViewController, self.locationTaskViewController], pageController: nil, frame: self.view.frame, navigationOrientation: .vertical, currentIndex: 0)
         
         if pageViewController != nil {
             //Create the page view controller
@@ -73,13 +73,12 @@ class TaskViewController: UIViewController, FullPagerProtocol {
     //Pager Delegate
     func onScrollPercentage(scrollPercentage: CGFloat, partialPercentage: CGFloat, scrollDirection: ScrollDirection) {
         print("Partial Percentage: \(partialPercentage)")
-        /**
+      
         if scrollDirection == .top && self.pageViewController.currentPageIndex == 0 {
             self.parentVc?.hideControls(hide: false)
         }else{
             self.parentVc?.hideControls(hide: true)
         }
-         **/
         
     }
     
@@ -87,10 +86,10 @@ class TaskViewController: UIViewController, FullPagerProtocol {
         print("Page Index Changed")
         switch index {
         case 0:
-            //self.parentVc?.hideControls(hide: false)
+            self.parentVc?.hideControls(hide: false)
             break
         case 1:
-            //self.parentVc?.hideControls(hide: true)
+            self.parentVc?.hideControls(hide: true)
             break
         default:
             break

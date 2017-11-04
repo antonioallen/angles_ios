@@ -9,11 +9,34 @@
 import UIKit
 import CoreData
 
-class LocationTaskViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LocationTaskViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
 
     var parentVc:TaskViewController?
     var beacon:Beacon?
     var tasks:[Task] = []
+    let reuseIdentifierToDoCell = "ToDoCell"
+    
+    fileprivate lazy var fetchedResultsController: NSFetchedResultsController<Task> = {
+        // Create Fetch Request
+        let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+        
+        //Add Search Predicate
+        if let beacon = self.beacon{
+            print("Becaon Type: \(beacon.beaconType)")
+            fetchRequest.predicate = NSPredicate(format: "(taskType == %@)", beacon.beaconType)
+        }
+        
+        // Configure Fetch Request
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "dueDate", ascending: true)]
+        
+        // Create Fetched Results Controller
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        // Configure Fetched Results Controller
+        fetchedResultsController.delegate = self
+        
+        return fetchedResultsController
+    }()
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -32,6 +55,13 @@ class LocationTaskViewController: UIViewController, UITableViewDelegate, UITable
         if let beacon = self.beacon{
             taskNameLabel.text = beacon.title
             taskCountLabel.text = " Items Due"
+        }
+        
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch {
+            let fetchError = error as NSError
+            print("\(fetchError), \(fetchError.userInfo)")
         }
     }
     
@@ -52,7 +82,7 @@ class LocationTaskViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.getTasks()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,8 +94,72 @@ class LocationTaskViewController: UIViewController, UITableViewDelegate, UITable
         self.parentVc?.pageViewController.scrollToViewController(index: 0)
     }
 
+    //Core Data
+    // MARK: Fetched Results Controller Delegate Methods
+    func controllerWillChangeContent(controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+    
+    func controller(controller: NSFetchedResultsController<NSFetchRequestResult>, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        switch (type) {
+        case .insert:
+            if let indexPath = newIndexPath {
+                tableView.insertRows(at: [indexPath as IndexPath], with: .fade)
+            }
+            break;
+        case .delete:
+            if let indexPath = indexPath {
+                tableView.deleteRows(at: [indexPath as IndexPath], with: .fade)
+            }
+            break;
+        case .update:
+            if let indexPath = indexPath {
+                let cell = tableView.cellForRow(at: indexPath as IndexPath) as! TaskItemTableViewCell
+                self.configureCell(cell: cell, atIndexPath: indexPath as IndexPath)
+            }
+            break;
+        case .move:
+            if let indexPath = indexPath {
+                tableView.deleteRows(at: [indexPath as IndexPath], with: .fade)
+            }
+            
+            if let newIndexPath = newIndexPath {
+                tableView.insertRows(at: [newIndexPath as IndexPath], with: .fade)
+            }
+            break;
+        }
+    }
     
     //MARK: -Table View Delegate
+    func configureCell(cell: TaskItemTableViewCell, atIndexPath indexPath: IndexPath) {
+        // Fetch Record
+        let record = fetchedResultsController.object(at: indexPath)
+        
+        // Update Cell
+        cell.taskCounterLabel.text = "\(indexPath.item+1)"
+        
+        if let taskTitle = record.value(forKey: "taskTitle") as? String {
+            cell.taskTitleLabel.text = taskTitle
+        }
+        
+        if let taskType = record.value(forKey: "taskType") as? String {
+
+        }
+        
+        if let taskDescription = record.value(forKey: "taskDescription") as? String {
+            cell.taskDescriptionLabel.text = taskDescription
+        }
+        if let dueDate = record.value(forKey: "dueDate") as? Date {
+            cell.taskDueLabel.text = ""
+        }
+        
+        
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let task = self.tasks[indexPath.item];
         let editTaskVc = self.storyboard?.instantiateViewController(withIdentifier: "EditTaskViewController") as! EditTaskViewController
@@ -75,12 +169,8 @@ class LocationTaskViewController: UIViewController, UITableViewDelegate, UITable
         self.present(editTaskVc, animated: true, completion: nil)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = self.tasks[indexPath.item]
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskItemTableViewCell") as! TaskItemTableViewCell
-        cell.taskTitleLabel.text = item.taskTitle
-        cell.taskDescriptionLabel.text = item.taskDescription
-        cell.taskDueLabel.text = ""
-        cell.taskCounterLabel.text = "\(indexPath.item+1)"
+        self.configureCell(cell: cell, atIndexPath: indexPath)
         return cell
     }
     
@@ -89,11 +179,20 @@ class LocationTaskViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        if let sections = fetchedResultsController.sections {
+            return sections.count
+        }
+        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tasks.count
+        if let sections = fetchedResultsController.sections {
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+        }
+        
+        return 0
     }
     
     

@@ -68,7 +68,6 @@ class RootLocationTaskViewController: PagerController, PagerDataSource, PagerDel
     
     func didChangeTabToIndex(_ pager: PagerController, index: Int, previousIndex: Int) {
         
-        /**
         if let vc = self.viewControllers[index] as? TaskViewController{
             if vc.pageViewController != nil{
                 if vc.pageViewController.currentPageIndex == 1{
@@ -78,7 +77,6 @@ class RootLocationTaskViewController: PagerController, PagerDataSource, PagerDel
             }
             
         }
-         **/
         
         if index == 0{
             self.backButton.isHidden = true
